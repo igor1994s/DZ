@@ -2,25 +2,26 @@ package by.teachmeskills.Lessen1;
 
 public class DZ1 {
     public static void main(String[] args) {
-        int a =100;
-        int i=1;
-        String znak;
-        if (a<0) {
-            znak = "отрицательное";
-            a = -a;
+        int a = 0;
+        int i = 1;
+        String znak=null;
+        if (a == 0) {
+            System.out.println("Число заданное в условии равно 0");
         }
-            if(a>0){
-                znak="положительное";
+            if (a < 0&&a!=0) {
+                znak = "отрицательное";
+                a = -a;
             }
             else {
-                znak=" равно 0";
+                znak = "положительное";
             }
-        if(a%10>0){
-        a=a/10;
-        i++;
+
+            while (a / 10 > 0) {
+                a = a / 10;
+                i++;
+            }
+
+            System.out.println("Число заданное в условии " + znak + " " + i + "-значное");
+
         }
-
-        System.out.println("Число заданное в условии "+znak+" "+i+"-значное");
-
     }
-}
