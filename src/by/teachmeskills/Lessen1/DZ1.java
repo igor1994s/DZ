@@ -2,7 +2,7 @@ package by.teachmeskills.Lessen1;
 
 public class DZ1 {
     public static void main(String[] args) {
-        int a = 0;
+        int a = 400;
         int i = 1;
         String znak=null;
         if (a == 0) {
