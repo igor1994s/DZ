@@ -8,7 +8,7 @@ public class Task1 {
         if (a != 0) {
             if (a < 0) {
                 znak = "отрицательное";
-                a = -a;
+                a = -a ;
             } else {
                 znak = "положительное";
             }
