@@ -2,7 +2,7 @@ package by.teachmeskills.lessen3;
 
 public class Task3 {
     public static void main(String[] args) {
-        int chislo=10;
+        int chislo=15;
         if (chislo>0){
             chislo+=1;
         }else if(chislo<0){
