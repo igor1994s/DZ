@@ -13,10 +13,10 @@ public class L5Task8 {
             a[i] = r.nextInt(9);
             b[i] = r.nextInt(9);
             if (b[i] == 0) {
-                c[i] = 0.0;
+                c[i] = 0;
             } else {
-                c[i] = (double) a[i] / b[i];
-                if (a[i] % b[i] == 0) {
+                c[i] = a[i] / (double) b[i];
+                if (a[i] % b[i] == 0 || c[i] == 0) {
                     count++;
                 }
             }
