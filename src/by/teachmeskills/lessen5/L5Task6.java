@@ -15,9 +15,9 @@ public class L5Task6 {
         }
         System.out.println();
         for (int i = 0; i < a.length-1; i++) {
-            if(a[i]==a[i+1]+1){
+            if(a[i]>a[i+1]){
                 countPlus++;
-            }else if(a[i]==a[i+1]-1){
+            }else if(a[i]<a[i+1]){
                 countMinus++;
             }
 
