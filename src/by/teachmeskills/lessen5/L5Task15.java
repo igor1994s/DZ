@@ -9,8 +9,7 @@ public class L5Task15 {
         Scanner sc = new Scanner(System.in);
         Random r = new Random();
         int index;
-        int c;
-        int min;
+
 
         System.out.println("Введите количество элементов масива: ");
         index = sc.nextInt();
