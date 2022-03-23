@@ -3,7 +3,7 @@ package by.teachmeskills.lessen5;
 import java.util.Random;
 import java.util.Scanner;
 
-public class L4Task11 {
+public class L5Task11 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         Random r =new Random();
