@@ -20,7 +20,7 @@ public class L5Task9 {
             a[i]=r.nextInt(15);
                 System.out.print(a[i]+" ");
             }
-            for (int i = 0; i < index/2; i++) {
+            for (int i = 0, j=a.length; i < index/2; i++,j--) {
                 sumA+=a[i];
             }
             for (int i = (index/2)+1; i < index; i++) {
