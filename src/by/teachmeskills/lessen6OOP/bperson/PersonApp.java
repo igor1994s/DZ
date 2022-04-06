@@ -1,4 +1,4 @@
-package by.teachmeskills.lessen6OOP.person;
+package by.teachmeskills.lessen6OOP.bperson;
 
 public class PersonApp {
     public static void main(String[] args) {
