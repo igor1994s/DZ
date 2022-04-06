@@ -1,4 +1,4 @@
-package by.teachmeskills.lessen6OOP.aphone;
+package by.teachmeskills.lessen6OOP.phone;
 
 public class PhoneApp {
     public static void main(String[] args) {

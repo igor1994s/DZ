@@ -1,4 +1,4 @@
-package by.teachmeskills.lessen6OOP.bperson;
+package by.teachmeskills.lessen6OOP.person;
 
 public class Person {
     private String fullName;

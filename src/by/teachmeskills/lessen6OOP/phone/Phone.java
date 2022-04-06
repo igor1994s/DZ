@@ -1,4 +1,4 @@
-package by.teachmeskills.lessen6OOP.aphone;
+package by.teachmeskills.lessen6OOP.phone;
 
 public class Phone {
     private String model;
