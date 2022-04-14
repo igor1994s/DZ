@@ -28,4 +28,10 @@ public class Person {
     void talk(){
         System.out.println(this.fullName+", которому "+this.age+" лет говорит.");
     }
+
+    @Override
+    public String toString(){
+
+        return fullName;
+    }
 }

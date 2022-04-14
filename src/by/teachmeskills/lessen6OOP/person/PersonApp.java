@@ -8,5 +8,6 @@ public class PersonApp {
         Person vlad =new Person("Vlad",24);
         maksim.move();
         vlad.talk();
+        System.out.println(vlad);
     }
 }
