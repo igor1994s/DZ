@@ -16,31 +16,31 @@ public class Task_2 {
         StringBuilder sb1=new StringBuilder();
         StringBuilder sb2=new StringBuilder();
         StringBuilder sb3=new StringBuilder();
-        sb1.append(a+"+"+b+"="+(a+b));
-        sb2.append(a+"-"+b+"="+(a-b));
-        sb3.append(a+"*"+b+"="+(a*b));
-        StringBuilder sbReplace1=new StringBuilder(sb1);
-        StringBuilder sbReplace2=new StringBuilder(sb2);
-        StringBuilder sbReplace3=new StringBuilder(sb3);
-        System.out.println(sb1);
-        System.out.println(sb2);
-        System.out.println(sb3);
+        StringBuilder [] sb={sb1,sb2,sb3};
+        sb[0].append(a).append("+").append(b).append("=").append(a+b);
+        sb[1].append(a).append("-").append(b).append("=").append(a-b);
+        sb[2].append(a).append("*").append(b).append("=").append(a*b);
+        StringBuilder [] sbReplace = new StringBuilder[3];
+        for (int i = 0; i < sb.length; i++) {
+            sbReplace[i]=new StringBuilder(sb[i]);
+        }
+        output(sb);
         System.out.println("Метод insert() and delete(): ");
-        sb1.insert(sb1.indexOf("=")," равно ");
-        sb1.deleteCharAt(sb1.indexOf("="));
-        sb2.insert(sb2.indexOf("=")," равно ");
-        sb2.deleteCharAt(sb2.indexOf("="));
-        sb3.insert(sb3.indexOf("=")," равно ");
-        sb3.deleteCharAt(sb3.indexOf("="));
-        System.out.println(sb1);
-        System.out.println(sb2);
-        System.out.println(sb3);
+        for (StringBuilder s:sb) {
+            s.insert(s.indexOf("=")," равно ");
+            s.deleteCharAt(s.indexOf("="));
+        }
+        output(sb);
         System.out.println("Метод replace(): ");
-        sbReplace1.replace(sbReplace1.indexOf("="),sbReplace1.indexOf("=")+1," равно ");
-        sbReplace2.replace(sbReplace2.indexOf("="),sbReplace2.indexOf("=")+1," равно ");
-        sbReplace3.replace(sbReplace3.indexOf("="),sbReplace3.indexOf("=")+1," равно ");
-        System.out.println(sbReplace1);
-        System.out.println(sbReplace2);
-        System.out.println(sbReplace3);
+        for (StringBuilder s:sbReplace) {
+            s.replace(s.indexOf("="),s.indexOf("=")+1," равно ");
+        }
+        output(sbReplace);
+    }
+
+    public static void output(StringBuilder [] sb){
+        for (StringBuilder s:sb) {
+            System.out.println(s);
+        }
     }
 }
