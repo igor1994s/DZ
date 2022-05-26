@@ -21,11 +21,11 @@ public class Main {
                 new People("Иван Иванович", 69, Sex.MAN)));
         people.stream().filter(p -> p.getSex() == MAN)
                 .filter(p -> p.getAge() >= 18 && p.getAge() <= 27)
-                .forEach(s -> System.out.println(s));
+                .forEach(System.out::println);
         System.out.println("Средний созраст мужчин: "+people.stream()
                 .filter(p -> p.getSex() == Sex.MAN)
-                .mapToDouble(People::getAge)
-                .average().getAsDouble());
+                .mapToDouble(p->p.getAge())
+                .average().orElse(0.0));
         System.out.println("Количество потенциально работоспособных человек: "+people.stream()
                 .filter(p->(p.getAge()>=18&&p.getAge()<=60&&p.getSex()==MAN)||
                         (p.getAge()>=18&&p.getAge()<=55&&p.getSex()==WOMEN)).count());
