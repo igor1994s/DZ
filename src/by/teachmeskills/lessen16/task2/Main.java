@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
         String email="igor1994s@yandex.by";
-        Pattern pat=Pattern.compile("^\\w+@[a-zA-Z_]+?\\.[a-zA-Z]{2,6}");
+        Pattern pat=Pattern.compile("^\\w{6,30}@[a-zA-Z_]+?\\.[a-zA-Z]{2,6}");
         Matcher mat=pat.matcher(email);
         System.out.println(mat.matches());
     }
